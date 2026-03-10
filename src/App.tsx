@@ -114,7 +114,7 @@ export default function App() {
   const totalBlocks = 36;
   const filledBlocks = Math.floor((progress / 100) * totalBlocks);
   const emptyBlocks = totalBlocks - filledBlocks;
-  const bar = '█'.repeat(filledBlocks) + ' '.repeat(emptyBlocks);
+  const bar = '#'.repeat(filledBlocks) + '-'.repeat(emptyBlocks);
 
   const padLine = (text: string) => `|   ${text.padEnd(48, ' ')}|`;
 
